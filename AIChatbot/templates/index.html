@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>NLTK Powered AI Chatbot</h2>
+        <div id="chatbox"></div>
+        <input type="text" id="userInput" placeholder="Type your message..." onkeydown="if(event.key==='Enter') sendMessage()">
+        <button onclick="sendMessage()">Send</button>
+    </div>
 
+    <script>
+        function sendMessage() {
+            const userInput = document.getElementById("userInput").value;
+            const chatbox = document.getElementById("chatbox");
+
+            if (userInput.trim() === "") return;
+
+            chatbox.innerHTML += `<div class='user'><b>You:</b> ${userInput}</div>`;
+            document.getElementById("userInput").value = "";
+
+            fetch(`/get?msg=${encodeURIComponent(userInput)}`)
+                .then(res => res.json())
+                .then(data => {
+                    chatbox.innerHTML += `<div class='bot'><b>Bot:</b> ${data.response}</div>`;
+                    chatbox.scrollTop = chatbox.scrollHeight;
+                });
+        }
+    </script>
+</body>
+</html>
