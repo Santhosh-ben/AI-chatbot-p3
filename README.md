@@ -10,7 +10,7 @@ DOMAIN: PYTHON PROGRAMMING
 
 DURATION: 4 WEEKS
 
-*MENTOR*: NEELA SANTHOSH KUMAR
+#MENTOR: NEELA SANTHOSH KUMAR
 
 PROJECT DESCRIPTION:
 This project is an AI-powered chatbot developed using Flask as the backend framework, with Natural Language Processing (NLP) techniques integrated using the NLTK library. It is designed to interact with users in a conversational way, answering general knowledge queries and recognizing simple greetings. The chatbot combines the power of WolframAlpha for computational intelligence and Wikipedia for general information extraction.
