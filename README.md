@@ -10,7 +10,7 @@ DOMAIN: PYTHON PROGRAMMING
 
 DURATION: 4 WEEKS
 
-MENTOR: NEELA SANTHOSH KUMAR
+#MENTOR#: NEELA SANTHOSH KUMAR
 
 PROJECT DESCRIPTION:
 This project is an AI-powered chatbot developed using Flask as the backend framework, with Natural Language Processing (NLP) techniques integrated using the NLTK library. It is designed to interact with users in a conversational way, answering general knowledge queries and recognizing simple greetings. The chatbot combines the power of WolframAlpha for computational intelligence and Wikipedia for general information extraction.
@@ -35,4 +35,5 @@ It gave me a deeper appreciation of how intelligent systems interpret and respon
 I implemented a simple greeting detection system using NLP to identify if the user is greeting the bot. This adds a layer of personalization to the conversation, enhancing the user experience by making the bot seem more "human-like".
 Additionally, future improvements could include more complex conversation flow with user-specific responses, such as remembering previous interactions or recognizing repeat users.
 
-OUTPUT
+OUTPUT:
+![Image](https://github.com/user-attachments/assets/53f8075d-7b62-4f13-adcc-d7137368b59f)
