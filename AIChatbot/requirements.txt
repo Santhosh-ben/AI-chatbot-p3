@@ -1,0 +1,4 @@
+flask
+wikipedia
+wolframalpha
+nltk
